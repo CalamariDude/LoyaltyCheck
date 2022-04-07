@@ -7,3 +7,36 @@
   font-size: 1.25rem;
 }
 
+.flex-box {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+}
+
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+/* flex-shrink: 1; */
+}
+
+.align-center {
+  align-self: center;
+}
+
+.iphone {
+  max-width: 150%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.min-full {
+  min-height: 95%
+}
+
+.full-screen {
+   height: 100%; 
+}
+
+.almost-full-screen {
+   height: 98%; 
+}
