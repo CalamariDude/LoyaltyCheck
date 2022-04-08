@@ -1,3 +1,24 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
 
 .test {
   font-family: 'League Gothic', sans-serif;
@@ -16,27 +37,18 @@
 .flex-bottom {
   display: flex;
   align-items: flex-end;
-/* flex-shrink: 1; */
+  flex-shrink: inherit;
 }
 
-.align-center {
-  align-self: center;
+.shrink {
+  flex-shrink: 1;
 }
 
 .iphone {
-  max-width: 150%;
-  max-height: 100%;
-  height: 100%;
+  height: 85%;
+  align-self: center;
 }
 
-.min-full {
-  min-height: 95%
-}
-
-.full-screen {
-   height: 100%; 
-}
-
-.almost-full-screen {
-   height: 98%; 
+.pb-8 {
+    padding-bottom: 7%;
 }
