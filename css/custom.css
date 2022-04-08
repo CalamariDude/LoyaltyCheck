@@ -24,8 +24,16 @@ html {
   font-family: 'League Gothic', sans-serif;
 }
 
+.justify-content {
+  justify-content: space-between;
+}
+
 .button-text {
   font-size: 1.25rem;
+}
+
+.full-screen {
+  min-height: 98%;
 }
 
 .flex-box {
@@ -46,9 +54,11 @@ html {
 
 .iphone {
   height: 85%;
+  max-width: 89%;
+  max-height: 85%;
   align-self: center;
 }
 
-.pb-8 {
-    padding-bottom: 7%;
+.pb-6 {
+    padding-bottom: 6%;
 }
