@@ -42,10 +42,25 @@ html {
   justify-content: space-evenly;
 }
 
+.display-flex {
+  display: flex; 
+}
+
+.align-center {
+  justify-content: center;
+}
+
 .flex-bottom {
   display: flex;
   align-items: flex-end;
   flex-shrink: inherit;
+}
+
+.small {
+  min-width: 27%;
+  min-height: 27%;
+  max-height: 27%;
+  max-width: 27%;
 }
 
 .shrink {
@@ -60,5 +75,13 @@ html {
 }
 
 .pb-6 {
-    padding-bottom: 6%;
+  padding-bottom: 6%;
+}
+
+.half-page {
+  width: 50%;
+}
+
+.rounded {
+  border-radius: 25px;
 }
