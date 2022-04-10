@@ -46,6 +46,11 @@ html {
   display: flex; 
 }
 
+.pill-padding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .align-center {
   justify-content: center;
 }
@@ -57,10 +62,7 @@ html {
 }
 
 .small {
-  min-width: 27%;
-  min-height: 27%;
-  max-height: 27%;
-  max-width: 27%;
+  width: 20rem;
 }
 
 .shrink {
