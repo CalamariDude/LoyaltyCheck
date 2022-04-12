@@ -135,9 +135,11 @@ html {
 }
 
 .pro {
- padding-left: 8rem; 
+ padding-left: 5rem; 
  padding-top: 2rem;
- padding-right: 8rem;
+ padding-right: 5rem;
+ min-width:30rem;
+ max-width:30rem;
 }
 
 .fill-white {
