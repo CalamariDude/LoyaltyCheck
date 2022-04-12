@@ -63,12 +63,12 @@ html {
 }
 
 .middle-page {
-  align-items: center;
+  align-self: center;
 }
 
 .flex-bottom {
   display: flex;
-  align-items: center;
+  align-items: bottom;
   flex-shrink: inherit;
 }
 
