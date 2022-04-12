@@ -62,9 +62,13 @@ html {
   justify-content: center;
 }
 
+.middle-page {
+  align-items: center;
+}
+
 .flex-bottom {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-shrink: inherit;
 }
 
@@ -118,6 +122,10 @@ html {
 
 .big-icon {
   width: 8rem;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .highlights-flex {
