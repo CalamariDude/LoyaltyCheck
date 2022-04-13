@@ -26,7 +26,10 @@ html {
   --spacing: 20%;
 }
 
-
+.shrinking-p-4 {
+  padding-left: 0%;
+  padding-right: 0%;
+}
 
 .test {
   font-family: 'League Gothic', sans-serif;
@@ -121,7 +124,7 @@ html {
 }
 
 .big-icon {
-  width: 8rem;
+  width: 15%;
 }
 
 .align-center {
@@ -148,18 +151,18 @@ html {
   align-items: center;
   justify-content: center;
   border-style: solid;
-  padding: 1rem;
+  padding: 5px;
   border-width: 10px;
   border-color: black;
   border-radius: 50px;
 }
 
 .pro {
- padding-left: 5rem; 
- padding-top: 2rem;
- padding-right: 5rem;
- min-width:30rem;
- max-width:40rem;
+ padding-left: 5%; 
+ padding-right: 5%;
+ padding-top: 2%;
+ padding-bottom: 2%;
+
 }
 
 .bubble-left {
@@ -183,8 +186,8 @@ html {
 .headlines {
   padding-right: 3rem;
   padding-left: 3rem;
-  width: 30rem;
   text-align: left;
+  max-width: 22rem;
 }
 
 .nav-button {
