@@ -577,8 +577,8 @@ body {
 
 footer.site-footer {
     padding: 60px 30px;
-    background: #222222;
-    color: #999999;
+    background: var(--bs-dark);
+    color: var(--bs-pink);
     font-size: 10pt;
 }
 
@@ -691,7 +691,7 @@ footer#footer-3-cols div.footer-section ul {
 
 footer#footer-3-cols div.footer-links ul li, footer#footer-3-cols div.footer-links ul li a   {
     list-style: none;
-    color: #999999;
+    color: white;
     line-height: 1.38em;
     margin-bottom: 1em;
 }
