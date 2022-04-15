@@ -18,6 +18,7 @@
   }
 }
 html {
+  background-color: white;
   font-size: 1rem;
   scroll-behavior: smooth;
 }
@@ -187,41 +188,43 @@ html {
 }
 
 .pro {
- padding-left: 5%; 
- padding-right: 5%;
- padding-top: 2%;
- padding-bottom: 2%;
  box-sizing:content-box;
+ margin-bottom: 20px;
+}
+
+.pro h3 {
+  font-size: 140%
 }
 
 .pro p {
-  font-size: 20px;
+  font-size: 100%;
 
 }
 
 .bubble-left {
-  background-color: white;
+  background-color: rgb(229,229,234);
   align-self: flex-start;
   display: flex;
   flex-direction: row;
+  color: black;
   border-color: rgb(234,234,234);
   border-width:3px;
   border-style: solid;
 }
 
 .bubble-right {
-  background-color: white;
   align-self: flex-end;
   display: flex;
   flex-direction: row;
-  background-color: rgb(234,234,234);
+  background-color: rgb(74, 181, 251);
+  color: white;
 }
 
 .headlines {
   padding-right: 3rem;
   padding-left: 3rem;
   text-align: left;
-  max-width: 22rem;
+
 }
 
 .nav {
