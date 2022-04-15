@@ -104,25 +104,6 @@ html {
   width: 50%;
 }
 
-
-.call-to-action-2 {
-  text-decoration: none;
-  color: white;
-  background-color: var(--bs-dark);
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-right: 10%;
-  padding-left: 10%;
-  font-size: 32px;
-  transition: color 0.5s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);  
-}
-
-.call-to-message {
-  width: 40%;
-  height: V12rem;
-}
-
 .no-dec {
   list-style: none;
 }
@@ -219,6 +200,24 @@ html {
   background-color: rgb(74, 181, 251);
   color: white;
 }
+.call-to-action-2 {
+  text-decoration: none;
+  color: black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 1.5rem;
+  transition: color 0.5s;
+}
+
+.call-to-action-message {
+  border-color: var(--bs-pink);
+  border-width: 0px;
+  background-color: var(--bs-pink);
+  transition: background-color 0.5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);  
+}
 
 .headlines {
   padding-right: 3rem;
@@ -260,7 +259,8 @@ html {
 }
 
 .call-to-action-2:hover{
-  color: var(--bs-pink);
+  color: var(--bs-white);
+  background-color: var(--bs-pink);
 }
 
 
