@@ -23,13 +23,13 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/custom.css" rel="stylesheet" />
         <link href="css/snippets.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <!-- Header-->
-        <nav class = "bg-light nav">
+        <nav class = "bg-white nav">
             <div class = "display-flex align-center">
                 <img class = "small transparent p-2" src="assets/img/lc.png"/>
                 <div class = "nav-button">
@@ -42,11 +42,7 @@
                 </div>
                 <div class = "nav-button">
                     <div class = "item"></div>
-                    <a class="px-4" onclick="scrollToSection(event)" href="#">About</a>
-                </div>
-                <div class = "nav-button">
-                    <div class = "item"></div>
-                    <a class="px-4" onclick="scrollToSection(event)" href="#services"></a>
+                    <a class="px-4" onclick="scrollToSection(event)" href="#agent">Become an agent</a>
                 </div>
             </div>
         </nav>
@@ -56,7 +52,7 @@
                 <div class="display-flex pb-6 px-4">
                     <div class="middle-page">
                         <h4 class="text-dark">How <em>loyal</em> is your partner?</h2>
-                        <a class="call-to-action"  href="#about">Find out</a>
+                        <a class="call-to-action" href="#about">Find out</a>
                     </div>
                 </div>
                 <div class = "flex-box pb-3">
@@ -106,40 +102,55 @@
         <br>
         <!-- Services-->
         <section class="content-section text-black rounded-pill bubble-spacing px-5" id="services">
-            <div class="highlights-flex p-5">
-            <h1 class = "text-center text-black pb-5 pt-3" id="services">Why us</h1>
-                <div class="pro text-center bubble-left rounded-pill">
-                    <img class = "big-icon fill-black py-4" src="assets/icons/account.svg"/>
+            <div class="highlights-flex">
+            <h1 class = "text-center text-black pb-5 pt-3">Why us</h1>
+                <div class="pro text-center bubble-left rounded-pill my-2">
+                    <img class = "big-icon fill-black py-4 mobile-bye" src="assets/icons/account.svg"/>
                     <div class = "headlines pt-3">
-                        <h4 class="text-secondary text-black">Real accounts</h4>
+                        <h3 class="text-secondary text-black">Real accounts</h3>
                         <p>All agents use geniune instagram accounts and have strong interpersonal skills</p>
                     </div>
                 </div>
-                <div class="pro text-center bubble-right rounded-pill">
-                    <img class = "big-icon fill-black" src="assets/icons/map.svg"/>
+                <div class="pro text-center bubble-right rounded-pill my-2">
+                    <img class = "big-icon fill-black mobile-bye" src="assets/icons/map.svg"/>
                     <div class = "headlines pt-3">
-                        <h4 class="text-secondary text-black pt-4">Agents live near your partner</h4>
+                        <h3 class="text-secondary text-black pt-4">Agents live near your partner</h3>
                         <p>For more seductivity</p>
                     </div>
                 </div>
-                <div class="pro text-center bubble-left rounded-pill">
-                    <img class = "big-icon fill-black" src="assets/icons/shield.svg"/>
+                <div class="pro text-center bubble-left rounded-pill my-2">
+                    <img class = "big-icon fill-black mobile-bye" src="assets/icons/shield.svg"/>
                     <div class = "headlines pt-3">
-                        <h4 class="text-secondary text-black pt-4">Only $20 if your partner doesn't reply</h4>
+                        <h3 class="text-secondary text-black pt-4">Only $20 if your partner doesn't reply</h3>
                         <p>Desirable outcomes deserve desirable rates</p>
                     </div>
                 </div>
-                <div class="pro text-center bubble-right rounded-pill">
-                    <img class = "big-icon fill-black" src="assets/icons/lock.svg"/>
+                <div class="pro text-center bubble-right rounded-pill my-2">
+                    <img class = "big-icon fill-black mobile-bye" src="assets/icons/lock.svg"/>
                     <div class = "headlines pt-3">
-                        <h4 class="text-secondary text-black pt-4">Completely Anonymous</h4>
+                        <h3 class="text-secondary text-black pt-4">Completely Anonymous</h3>
                         <p>We don't collect or share any of your information</p>
                     </div>
                 </div>
+                <div class="pro text-center mt-3 call-to-action-2 rounded-pill call-to-message display-flex align-center">
+                    <a class="rounded-pill call-to-action-2">Try now 💆‍♂️</a>
+                </div>
+            <div class ="rounded-pill mt-5" style="background-color: black; width: 50%; height: .7rem;"></div>
             </div>
         </section>
         <br>
         <br>
+        <section class = "content-section " id="agent">
+            <div class = "display-flex align-center text-black">
+                <h1>Pricing</h1>
+            </div>
+            <div class = "display-flex text-black">
+                <ul>
+                    <li class = "perks"></li>
+                    <li class = "perks">Works your own hours</li>
+                </ul>
+            </div>
+        </section>
         <!-- Footer-->
         <footer class="footer text-center">
             <p class="text-muted small mb-0">Copyright &copy; LoyaltyCheck LLC 2022</p>
