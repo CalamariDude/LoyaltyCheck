@@ -62,6 +62,11 @@ html {
   display: flex; 
 }
 
+.flex-center-col {
+  flex-direction: column;
+  align-items: center;
+}
+
 .pill-padding {
   padding-left: 5%;
   padding-right: 5%;
@@ -171,6 +176,7 @@ html {
  display: inline-flex;
  box-sizing:content-box;
  margin-bottom: 20px;
+ padding-top: 10px;
 }
 
 .pro h3 {
@@ -212,10 +218,13 @@ html {
 }
 
 .nav {
- position: relative; 
- width: 100%; 
- z-index: 10;
+  position: fixed; 
+  width: 100%; 
+  z-index: 10;
+  box-shadow: 3px 3px 3px rgba( 136 , 136 , 136 , 0.2 );
 }
+
+pancake
 
 .nav-button {
   height: 3rem;
@@ -243,9 +252,87 @@ html {
   opacity: 1;
 }
 
-.call-to-action-2:hover{
-  color: var(--bs-white);
-  background-color: var(--bs-pink);
+.call-to-action-own {
+  background-color: var(--bs-pink-light);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: PT Serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s, border-color .5s, border-style .5s;
+  box-shadow: 3px 3px 3px rgba( 136 , 136 , 136 , 0.2 );
+ 
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.call-to-action-own p{
+  font-style: normal;
+  margin-bottom: 0rem;
+  padding-left: 15px;
+  padding-right:15px;
+  padding-top: 4px;
+  padding-bottom: 4px;  
+}
+
+  .call-to-action-own:hover {
+  background-color: var(--bs-pink-extra-light);
+  border-color: var(--bs-black-rgb);
+  border-style: single;
+}
+
+#inputEmail {
+  float: left;
+  box-shadow: 0 4px 4px rgba(238, 216, 216, 0.12);
+  margin-right: 7px;
+  background-color: rgb(245,245, 245);
+  border: 1.5px solid var(--bs-pink);
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  outline: 0;
+  height: 100%;
+  padding-left: 2rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 1rem;
+  color: #444;
+  line-height: normal;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  box-shadow: 3px 3px 3px rgba( 136 , 136 , 136 , 0.2 );
+  writing-mode: horizontal-tb;
+  border: none;
+}
+
+.textbox i {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 7px;
+  color: #444;
+  font-size: 18px;
+}
+
+.input-landing input:hover {
+  border-style: none
 }
 
 
+.line-height {
+  line-height: 1rem;
+}
+
+.font-up {
+  font-size:26px;
+}
+
+.text-left {
+  align-self: flex-start;
+}

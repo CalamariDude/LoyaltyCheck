@@ -18,6 +18,7 @@
   outline: none;
   padding: 0 10px;
   position: relative;
+  transition: opacity .3s;
   text-transform: uppercase;
 }
 
@@ -65,10 +66,6 @@
   transform: rotate(225deg);
 }
 
-
-
-
-
 /*FAQ*/
 body {
     color: #fff;
@@ -105,7 +102,6 @@ body {
   .panel-content {
     font-size: 20px;
     color: #fff;
-
     padding: 0px 14px;
     margin: 0 40px;
     height: 0;
