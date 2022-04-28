@@ -78,3 +78,11 @@ function fadeIn(el, display) {
         }
     })();
 };
+
+
+function find_out() {
+    var instagram_handle = document.getElementById("instagram_handle").value
+    if (instagram_handle) {var ig=instagram_handle} else {var ig=" "};
+    window.location = `form.html?ig=${ig}`
+};
+

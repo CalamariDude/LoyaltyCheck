@@ -34,15 +34,15 @@
                 <img class = "small transparent p-2" src="assets/img/lc.png"/>
                 <div class = "nav-button">
                     <div class = "item"></div>
-                    <a class="px-4 " onclick="scrollToSection(event)" href="#about">How it works</a>
+                    <a class="" onclick="scrollToSection(event)" href="#about">How it works</a>
                 </div>
                 <div class = "nav-button">
                     <div class = "item"></div>
-                    <a class="px-4" onclick="scrollToSection(event)" href="#services">Why us</a>
+                    <a class="" onclick="scrollToSection(event)" href="#services">Why us</a>
                 </div>
                 <div class = "nav-button">
                     <div class = "item"></div>
-                    <a class="px-4" onclick="scrollToSection(event)" href="#agent">Pricing</a>
+                    <a class="" onclick="scrollToSection(event)" href="#agent">Pricing</a>
                 </div>
             </div>
         </nav>
@@ -54,8 +54,8 @@
                         <div class="display-flex align-center line-height;">
                             <form class = "textbox">
                                 <i><em>@</em></i>
-                                <input type="text" id="inputEmail" placeholder="Enter partner's instagram" required>
-                                <a class="call-to-action-own rounded-pill" onclick="void(0) " href="#about">
+                                <input type="text" class = "inputEmail" id="instagram_handle" placeholder="Enter partner's instagram">
+                                <a class="call-to-action-own rounded-pill" onclick="find_out()" href="#about">
                                     <p>Find Out</p>
                                 </a>
                             </form>
@@ -155,9 +155,7 @@
             </div>
             <div class="mt-5 display-flex align-center line-height;">
                 <form class = "textbox">
-                    <i><em>@</em></i>
-                    <input type="text" id="inputEmail" placeholder="Enter partner's instagram" required>
-                    <a class="call-to-action-own rounded-pill" onclick="void(0) " href="#about">
+                    <a class="call-to-action-own rounded-pill" onclick="find_out()">
                         <p>Find Out</p>
                     </a>
                 </form>
@@ -182,58 +180,7 @@
             <div class="container">
                 
                 <!--BLOCK ROW START-->
-                <div class="row">
-                    <div class="col-md-4">
-                    
-                        <!--PRICE CONTENT START-->
-                        <div class="generic_content clearfix">
-                            
-                            <!--HEAD PRICE DETAIL START-->
-                            <div class="generic_head_price clearfix">
-                            
-                                <!--HEAD CONTENT START-->
-                                <div class="generic_head_content clearfix">
-                                
-                                    <!--HEAD START-->
-                                    <div class="head_bg"></div>
-                                    <div class="head">
-                                        <span>Basic</span>
-                                    </div>
-                                    <!--//HEAD END-->
-                                    
-                                </div>
-                                <!--//HEAD CONTENT END-->
-                                
-                                <!--PRICE START-->
-                                <div class="generic_price_tag clearfix">	
-                                    <span class="price">
-                                        <span class="sign">$</span>
-                                        <span class="currency">24.99</span>
-                                    </span>
-                                </div>
-                                <!--//PRICE END-->
-                                
-                            </div>                            
-                            <!--//HEAD PRICE DETAIL END-->
-                            
-                            <!--FEATURE LIST START-->
-                            <div class="generic_feature_list">
-                                <ul>
-                                    <li><span>1</span> Follow-back Check</li>
-                                    <li><span>1</span> Message</li>
-                                    <li><span>All</span> Screenshots</li>
-                                    <li><span>Standard</span> Results back in 14-15 days</li>
-                                </ul>
-                            </div>
-                            <!--//FEATURE LIST END-->
-                            
-                            <!--BUTTON START-->
-                            <!--//BUTTON END-->
-                            
-                        </div>
-                        <!--//PRICE CONTENT END-->
-                            
-                    </div>
+                <div class="row align-center">
                     
                     <div class="col-md-4">
                     
@@ -249,7 +196,7 @@
                                     <!--HEAD START-->
                                     <div class="head_bg"></div>
                                     <div class="head">
-                                        <span>LoyaltyCheck™</span>
+                                        <span>1 LoyaltyCheck™</span>
                                     </div>
                                     <!--//HEAD END-->
                                     
@@ -284,10 +231,12 @@
                         <!--//PRICE CONTENT END-->
                             
                     </div>
+                
+                
                     <div class="col-md-4">
                     
                         <!--PRICE CONTENT START-->
-                        <div class="generic_content clearfix">
+                        <div class="generic_content active clearfix">
                             
                             <!--HEAD PRICE DETAIL START-->
                             <div class="generic_head_price clearfix">
@@ -298,7 +247,7 @@
                                     <!--HEAD START-->
                                     <div class="head_bg"></div>
                                     <div class="head">
-                                        <span>LoyaltyCheck Pro™</span>
+                                        <span>3 LoyaltyChecks™</span>
                                     </div>
                                     <!--//HEAD END-->
                                     
@@ -309,7 +258,7 @@
                                 <div class="generic_price_tag clearfix">	
                                     <span class="price">
                                         <span class="sign">$</span>
-                                        <span class="currency">49.99</span>
+                                        <span class="currency">$99.99</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->
@@ -320,11 +269,11 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>1</span> Follow-back Check</li>
-                                    <li><span>1</span> Conversation</li>
-                                    <li><span>2</span> LoyaltyCheck Methods*</li>
+                                    <li><span>3</span> Follow-back Checks</li>
+                                    <li><span>3</span> Conversations</li>
+                                    <li><span>3</span> LoyaltyCheck Methods*</li>
                                     <li><span>All</span> Screenshots</li>
-                                    <li><span>Expedited</span> Results back in 7 days</li>
+                                    <li><span>Standard</span> Results back in 14-15 days</li>
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -332,12 +281,9 @@
                         </div>
                         <!--//PRICE CONTENT END-->
                             
-                    </div>
-                </div>	
-                <!--//BLOCK ROW END-->
-                
-            <p class = "text-black">*See <a href="#about">LoyaltyCheck Methods</a> for types</p>
+                </div>
             </div>
+            <p class = "text-black">*See <a href="#about">LoyaltyCheck Methods</a> for types</p>
         </section>             
     </div>
             
