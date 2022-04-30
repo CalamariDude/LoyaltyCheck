@@ -41,8 +41,8 @@
         </div>
       </div>
       <div class="input-wrapper">
-        <label>Picture of target's current partner</label>
-        <p class="text-muted btn--text py-1 my-1">Used to determine target's general type. <em>Don't worry you'll get to confirm the instagram agent we pick for the job.</em></p>
+        <label>Picture of their type</label>
+        <p class="text-muted btn--text py-1 my-1">Could be of you, an ex, or a suspect.<em> We use this picture to find an account that your partner will find attractive.</em></p>
           <div class="input-group">
             <input type="file" class="form-control" id="inputGroupFile02">
           </div>
@@ -51,34 +51,41 @@
       <div class="input-wrapper">
         <div class="input-group mb-3  display-flex flex-col">
           <div>
-          <label>Partner's approximate location</label>
-</div>
+            <label>Is your partner in miami?</label>
+          </div>
           <div>
-          <p class="text-muted btn--text py-1 my-1">We currently only service Miami area</p>
-</div>
+            <p class="text-muted btn--text py-1 my-1">We currently only service Miami area</p>
+          </div>
           <div>
-          <select class="form-select" aria-label="Default select example" required>
-            <option selected>Is your partner in miami?</option>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
-          </select>
-</div>
+            <select class="form-select" aria-label="Default select example" required>
+              <option selected></option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
         </div>
       </div>
       <div class="input-wrapper">
         <div class="input-group mb-3">
           <div>
           <label>What question are you looking to answer with our service?</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select question</option>
+          <select class="form-select" aria-label="Default select example" required>
+<!-- <option selected>Select one</option> -->
+              <option selected></option>
             <option value="1">Will they respond to a flirtatious opening i.e. "hey ;)"</option>
             <option value="2">Will they claim to be single when asked?</option>
             <option value="3">Will they agree to meetup when asked?</option>
           </select>
         </div>
       </div>
+      <div class="input-wrapper pb-4">
+        <label>Email screenshots will be sent</label>
+        <div class="input-group">
+          <input type="text" id="instagram_handle" data-lpignore="true" required/>
+        </div>
+      </div>
       <div class="btn-group">
-        <button class="btn btn--primary">Submit</button>
+        <button class="btn btn--primary">Confirm</button>
       </div>
     </div>
   </form>   

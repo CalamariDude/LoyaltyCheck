@@ -168,7 +168,8 @@ html {
   .mobile-bye {
     display: none;
   }
-  .nav {
+  .nav-custom {
+    visibility: hidden;
     display: none;
   }
   .ninty-5-full {
@@ -222,11 +223,21 @@ html {
 
 }
 
-.nav {
+.nav-custom {
   position: fixed; 
+  display: flex;
+  justify-content: space-between;
   width: 100%; 
   z-index: 10;
   box-shadow: 3px 3px 3px rgba( 136 , 136 , 136 , 0.2 );
+}
+
+.full-width {
+  width: 100%;
+}
+
+.justify-right {
+  justify-content: flex-end;
 }
 
 .nav-button {
@@ -343,4 +354,31 @@ html {
 .medium-icon {
   width: 5rem;
   height: 5rem;
+}
+
+.align-row-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.justify-self-end {
+  justify-self: flex-end;
+}
+
+.no-wrap-words {
+  white-space: nowrap;
+}
+.min-width-3 {
+  min-width: 8rem;
+}
+
+.min-width-4 {
+  min-width: 15rem;
+}
+
+.menuitem a{
+  text-decoration: none;
 }

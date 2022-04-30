@@ -29,21 +29,26 @@
     <body id="page-top">
         <!-- Navigation-->
         <!-- Header-->
-        <nav class = "bg-white nav">
-            <div class = "display-flex align-center">
-                <img class = "small transparent p-2" src="assets/img/lc.png"/>
-                <div class = "nav-button">
+        <nav class = "bg-white nav-custom align-row-center">
+            <div class = "full-width display-flex align-row-center">
+                <img class = "small transparent p-4" src="assets/img/lc.png"/>
+                <div class = "nav-button px-4">
                     <div class = "item"></div>
-                    <a class="" onclick="scrollToSection(event)" href="#about">How it works</a>
+                    <a class="" onclick="scrollToSection(event)" href="#about1">How it works</a>
                 </div>
-                <div class = "nav-button">
+                <div class = "nav-button px-4">
                     <div class = "item"></div>
-                    <a class="" onclick="scrollToSection(event)" href="#services">Why us</a>
+                    <a class="" onclick="scrollToSection(event)" href="#services1">Why us</a>
                 </div>
-                <div class = "nav-button">
+                <div class = "nav-button px-4">
                     <div class = "item"></div>
-                    <a class="" onclick="scrollToSection(event)" href="#agent">Pricing</a>
+                    <a class="" onclick="scrollToSection(event)" href="#agent1">Pricing</a>
                 </div>
+            </div>
+            <div class="align-center m-3">
+                <a class="min-width-3 call-to-action-own rounded-pill" onclick="find_out()">
+                    <p>Try Now</p>
+                </a>
             </div>
         </nav>
         <header class = "ninty-5-full full-screen">
@@ -68,44 +73,51 @@
             </div>
         </header>
         <!-- About-->
+        <br id="about1">
+        <br>
         <section class="content-section text-dark rounded-pill mx-3" id="about">
             <h1 class = "text-center">How it works</h1>
             <br>
             <br>
             <div class = "container table    pill-padding">
                <ul class = "col no-dec chrono-list">
-                   <li class = "chrono-item">
+                   <li class = "chrono-item p-3">
                         <img class = "icon fill-pink medium-icon" src="assets/icons/form.svg"/>
                         <div>
                             <h4>Give us the juicy details</h4>
                             <p>Your partner's type, location, what you want to find out</p>
                         </div>
                     </li>
-                   <li class = "chrono-item">
+                   <li class = "chrono-item p-3">
                        <img class = "icon fill-pink medium-icon" src="assets/icons/person.svg"/>
                        <div>
                            <h4>We match you with a suitable pairing</h4>
                            <p>A real person with an instagram who will seduce your partner</p>
                         </div>
                     </li>
-                   <li class="chrono-item">
+                   <li class="chrono-item p-3">
                        <img class="icon fill-pink medium-icon" src="assets/icons/chat.svg"/>
                        <div>
                            <h4>Pairing instagram seduces your partner for 2 weeks</h4>
                            <p>they give it all they got ;)</p>
                         </div>
                     </li>
-                   <li class="chrono-item">
+                   <li class="chrono-item p-3">
                        <img class="icon fill-pink medium-icon" src="assets/icons/screenshot.svg"/>
                        <div>
                            <h4>Screenshots of the conversations to your inbox</h4>
-                           <p>Pairing instagram then blocks your partner and disapears</p>
+                           <p>Pairing instagram then blocks your partner and dissapears</p>
                         </div>
                     </li>
                </ul> 
             </div>
         </section>
 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br id="services1">
         <br>
         <br>
         <!-- Services-->
@@ -129,7 +141,7 @@
                 <div class="pro text-center bubble-left rounded-pill fly-in-left">
 <!-- <img class = "big-icon fill-black mobile-bye" src="assets/icons/shield.svg"/> -->
                     <div class = "headlines">
-                        <h3 class="pt-2 text-black">Only $20 if your partner doesn't reply</h3>
+                        <h3 class="pt-2 text-black">Only $10 if your partner doesn't reply</h3>
                         <p>Desirable outcomes deserve desirable rates</p>
                     </div>
                 </div>
@@ -137,20 +149,20 @@
 <!-- <img class = "big-icon fill-white mobile-bye" src="assets/icons/lock.svg"> -->
                     <div class = "headlines">
                         <h3 class="pt-2">Instagram Influencers Available</h3>
-                        <p>Can your partner resist a famous influencer</p>
+                        <p>Can your partner resist a famous influencer?</p>
                     </div>
                 </div>
                 <div class="pro text-center bubble-left rounded-pill fly-in-left">
                     <div class = "headlines text-black">
                         <h3 class="pt-2">Hassle Free</h3>
-                        <p>Fill out the form and we'll take care of the rest</p>
+                        <p>Fill out the form and we take care of the rest</p>
                     </div>
                 </div>
                 <div class="pro text-center bubble-right rounded-pill fly-in-right">
 <!-- <img class = "big-icon fill-white mobile-bye" src="assets/icons/lock.svg"> -->
                     <div class = "headlines">
                         <h3 class="pt-2">Completely Anonymous</h3>
-                        <p>We don't collect or share any of your information</p>
+                        <p>We destroy all data collected after you receive screenshots</p>
                     </div>
                 </div>
             </div>
@@ -162,7 +174,7 @@
                 </form>
             </div>
         </section>
-        <br>
+        <br id="agent1">
         <br>
         <section class = "content-section " id="agent">
 <div id="generic_price_table">   
@@ -208,7 +220,7 @@
                                 <div class="generic_price_tag clearfix">	
                                     <span class="price">
                                         <span class="sign">$</span>
-                                        <span class="currency">39.99</span>
+                                        <span class="currency">19.99</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->
@@ -227,22 +239,19 @@
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
+                            <div class="mt-3 display-flex align-center line-height;">
+                                <form class = "textbox">
+                                    <a class="call-to-action-own rounded-pill" onclick="find_out()">
+                                        <p>Select</p>
+                                    </a>
+                                </form>
+                            </div>
                             
                         </div>
                         <!--//PRICE CONTENT END-->
                             
                     </div>
-                
-                
-                            
                 </div>
-            <div class="mt-5 display-flex align-center line-height;">
-                <form class = "textbox">
-                    <a class="call-to-action-own rounded-pill" onclick="find_out()">
-                        <p>Find Out</p>
-                    </a>
-                </form>
-            </div>
             </div>
             <p class = "text-black">*See <a href="#about">LoyaltyCheck Methods</a> for types</p>
         </section>             
@@ -301,8 +310,9 @@
                         </div>
                     </div>
                     <div id="copyright-text">
-                        Copyright &copy; LoyaltyCheck LLC 2022
+                        Copyright &copy; LoyaltyCheck LLC 2022 
                     </div>
+                    <div class = "p-3">*site under construction, links may be missing</div>
                     <div id="social-buttons">
                         <img src="https://img.icons8.com/ios-filled/25/999999/facebook--v1.png"/><img src="https://img.icons8.com/ios-filled/25/999999/telegram-app.png"/><img src="https://img.icons8.com/ios-filled/25/999999/instagram--v1.png"/>
                     </div>
