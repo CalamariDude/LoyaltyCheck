@@ -17,9 +17,9 @@ body {
   --space-m: var(--space-root);
   --space-l: calc(var(--space-root) * 1.5);
   --space-xl: calc(var(--space-root) * 2);
-  --color-primary: mediumslateblue;
+  --color-primary: rgb(25, 25, 25);
   --color-secondary: black;
-  --color-tertiary: hotpink;
+  --color-tertiary: var(--bs-pink);
   --base-border-radius: 0.25rem;
   --ease: cubic-bezier(0.075, 0.82, 0.165, 1);
   --duration: 700ms;
@@ -215,4 +215,14 @@ input:focus {
 .btn--text {
   font-size: calc(var(--font-size) / 1.5);
   padding: 0;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.icon-size {
+  width: 2rem;
+  height: 2rem;
+  margin-left: -8.5px;  
 }

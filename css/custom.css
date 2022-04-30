@@ -339,3 +339,8 @@ html {
 .text-left {
   align-self: flex-start;
 }
+
+.medium-icon {
+  width: 5rem;
+  height: 5rem;
+}
