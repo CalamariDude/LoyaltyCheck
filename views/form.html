@@ -29,7 +29,7 @@
     </head>
  
 <body id="page-top"> 
-  <form class="form" onsubmit="return false" autocomplete="off">
+  <form class="form" onsubmit="" autocomplete="off">
     <div class="form-inner">
       <h2>Just a few more questions...</h2>
       <div class="input-wrapper">
@@ -57,7 +57,7 @@
             <p class="text-muted btn--text py-1 my-1">We currently only service Miami area</p>
           </div>
           <div>
-            <select class="form-select" aria-label="Default select example" required>
+            <select id="in_miami" class="form-select" aria-label="Default select example" required>
               <option selected></option>
               <option value="1">Yes</option>
               <option value="2">No</option>
@@ -69,9 +69,9 @@
         <div class="input-group mb-3">
           <div>
           <label>What question are you looking to answer with our service?</label>
-          <select class="form-select" aria-label="Default select example" required>
+          <select id="loyalty_check" class="form-select" aria-label="Default select example" required>
 <!-- <option selected>Select one</option> -->
-              <option selected></option>
+            <option selected></option>
             <option value="1">Will they respond to a flirtatious opening i.e. "hey ;)"</option>
             <option value="2">Will they claim to be single when asked?</option>
             <option value="3">Will they agree to meetup when asked?</option>
@@ -79,13 +79,18 @@
         </div>
       </div>
       <div class="input-wrapper pb-4">
-        <label>Email screenshots will be sent</label>
+        <label>Email where screenshots will be sent</label>
+        <div class="input-group pb-2">
+          <input type="email" id="email" data-lpignore="true" required/>
+        </div>
+        <label>Confirm email</label>
         <div class="input-group">
-          <input type="text" id="instagram_handle" data-lpignore="true" required/>
+          <input type="email" id="confirm_email" data-lpignore="true" required/>
         </div>
       </div>
+      
       <div class="btn-group">
-        <button class="btn btn--primary">Confirm</button>
+        <button class="btn btn--primary" onclick="next_form()">Confirm</button>
       </div>
     </div>
   </form>   

@@ -266,6 +266,10 @@ html {
   opacity: 1;
 }
 
+.halfpagewidth {
+  width: 25rem;
+}
+
 .call-to-action-own {
   background-color: var(--bs-pink-light);
   color: white;
@@ -276,6 +280,7 @@ html {
   padding-bottom: 5px;
   display: flex;
   text-align: center;
+  width: 7rem;
   align-items: center;
   justify-content: center;
   transition: background-color 1s, border-color .5s, border-style .5s;
@@ -381,4 +386,8 @@ html {
 
 .menuitem a{
   text-decoration: none;
+}
+
+wrap {
+  
 }
