@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
     console.log(err)
 });
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 80);
 
 var server = app.listen(app.get('port'), function () {
     console.log('server running on ', server.address().port);
