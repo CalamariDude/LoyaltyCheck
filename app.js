@@ -1,18 +1,34 @@
-var express = require('express');
-var path = require('path');
-var bodyParser = require('body-parser');
-var app = express();
+const express = require('express');
+const http = require('http');
+const path = require('path');
+const https = require('https');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const engine = require('consolidate')
 
-//view engine setup
+const app = express();
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 
-var engine = require('consolidate')
+// incoming messages
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(cookieParser())
+
+// static html
 app.use(express.static(path.join(__dirname, 'public')));
 app.engine('html', engine.mustache);
 app.use(express.static('./public/'));
+
+// start http server
+const port = 80;
+let server = http.createServer(app).listen(port);
+
+// start https server
+let sslOptions = {
+   key: fs.readFileSync('../key.pem'),
+   cert: fs.readFileSync('../cert.pem')
+};
+
 
 app.get('/', function(req, res, next) {
     res.set('Content-Type', 'text/html');
@@ -26,8 +42,6 @@ app.use(function(req, res, next) {
     console.log(err)
 });
 
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 80)
 
-var server = app.listen(app.get('port'), function () {
-    console.log('server running on ', server.address().port);
-});
+let serverHttps = https.createServer(sslOptions, app).listen(443)
