@@ -99,9 +99,9 @@ html {
 }
 
 .iphone {
-  height: 89%;
-  max-width: 89%;
-  max-height: 85%;
+  height: 92%;
+  max-width: 95%;
+  max-height: 92%;
   align-self: center;
 }
 
@@ -162,7 +162,7 @@ html {
 }
 
 .ninty-5-full {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 @media screen and (max-width: 1000px) {
   .mobile-bye {
