@@ -35,6 +35,11 @@ app.get('/', function(req, res, next) {
     return res.render('index.html')
 });
 
+app.get('/form', function(req, res, next) {
+    res.set('Content-Type', 'text/html');
+    return res.render('form.html')
+});
+
 // catch 404
 app.use(function(req, res, next) {
     var err = new Error('Not Found');

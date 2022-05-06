@@ -207,6 +207,9 @@ input:focus {
   border-color: var(--color-primary);
   color: white;
 }
+.btn--primary:hover {
+  color: var(--bs-pink);
+}
 .btn--primary:focus {
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
