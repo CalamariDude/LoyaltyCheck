@@ -4,7 +4,8 @@ const path = require('path');
 const https = require('https');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-const engine = require('consolidate')
+const engine = require('consolidate');
+const config = require('config');
 
 const app = express();
 
@@ -20,10 +21,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('./public/'));
 
-
 // routes
 app.get('/', function(req, res, next) {
     res.set('Content-Type', 'text/html');
+// res.render('index', viewdata);
     return res.render('index.html')
 });
 
@@ -48,11 +49,11 @@ app.use(function(req, res, next) {
 const port = 80;
 const httpsport = 443
 let server = http.createServer(app).listen(port);
-const is_prod = Process.env
 
 // start https server
 let sslOptions = {
    key: fs.readFileSync('../key.pem'),
    cert: fs.readFileSync('../cert.pem')
 };
+
 let serverHttps = https.createServer(sslOptions, app).listen(httpsport)
